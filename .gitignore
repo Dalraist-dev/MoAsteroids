@@ -1,0 +1,26 @@
+# Python bytecode and compiled files
+__pycache__/          
+*.py[cod]             
+*.so                  
+*.egg-info/          
+dist/                 
+build/                
+
+# Virtual environments - these should be recreated, not shared
+.venv/                
+venv/                 
+env/                 
+
+# IDE and editor files - personal preferences, not project code
+.vscode/              
+.idea/                
+*.swp                 
+*.swo                 
+
+# Operating system files - not part of your project
+.DS_Store             
+Thumbs.db             
+
+# Environment variables - often contain secrets/API keys
+.env                  
+.env.local           

@@ -1,7 +1,7 @@
 [project]
 name = "moasteroids"
 version = "0.1.0"
-description = "Add your description here"
+description = "Build Asteroids using Python and Pygame - boot.dev project"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
