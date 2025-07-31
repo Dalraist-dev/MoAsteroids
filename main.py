@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 
+# Dal = Items I went off script from Project
+
 #Imports
+import sys
+import time
 import pygame
-from pygame.locals import *
+from pygame.locals import * # Dal
 from constants import *
 from player import Player
 from asteroid import Asteroid
@@ -40,6 +44,14 @@ def main():
 
         # Sprite Updates
         updatable.update(dt)
+
+        # Collision Check
+        for asteroid in asteroids:
+            if asteroid.collides_with(player):
+                print("Game Over!")
+                pygame.display.set_caption("Game Over!") # Dal - Place Holder for Text on Screen - Quick Addition until I am in mood to play with Stylish Text. Wiki made it look straightforward for future projects. 
+                time.sleep(5) # Dal - Too Jarring on Eyes to immediately close
+                sys.exit()
 
         # Screen Refresh/Draw   
         screen.fill("black")
