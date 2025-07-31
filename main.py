@@ -55,6 +55,11 @@ def main():
                 pygame.display.set_caption("Game Over!") # Dal - Place Holder for Text on Screen - Quick Addition until I am in mood to play with Stylish Text. Wiki made it look straightforward for future projects. 
                 time.sleep(5) # Dal - Too Jarring on Eyes to immediately close
                 sys.exit()
+        
+            for shot in shots:
+                if shot.collides_with(asteroid):
+                    shot.kill()
+                    asteroid.split()
 
         # Screen Refresh/Draw   
         screen.fill("black")
