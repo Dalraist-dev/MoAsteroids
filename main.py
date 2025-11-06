@@ -38,7 +38,7 @@ def main():
     # Player & Enviroment Initialization
     asteroid_field = AsteroidField()
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
-
+  
     # Main Game Loop
     while True:
         for event in pygame.event.get():
