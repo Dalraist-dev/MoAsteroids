@@ -5,8 +5,8 @@
 #Imports
 import sys
 import time
-import pygame
-from pygame.locals import * # Dal
+import pygame # type: ignore
+from pygame.locals import * # type: ignore # Dal
 from constants import *
 from player import Player
 from asteroid import Asteroid
